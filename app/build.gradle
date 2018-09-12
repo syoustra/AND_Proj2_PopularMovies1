@@ -9,6 +9,11 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //PLEASE ENSURE YOU HAVE A VALID API KEY FOR tmdb
+        //A VALID KEY WILL NEED TO BE ENTERED IN THE [git-ignored] gradle.properties FILE
+        //WITHOUT A KEY, THIS APP WILL NOT WORK
+        buildConfigField("String", "API_KEY", API_KEY)
     }
     buildTypes {
         release {
